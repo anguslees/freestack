@@ -1,0 +1,30 @@
+[package]
+name = "freestack"
+version = "0.1.0"
+authors = ["Angus Lees <gus@inodes.org>"]
+license = "GPL"
+build = "build.rs"
+
+[[bin]]
+name = "server"
+path = "src/main.rs"
+
+[lib]
+name = "freestack"
+
+[build-dependencies]
+capnpc = "0.6"
+
+#[build-dependencies.capnpc]
+#path = "/home/gus/src/capnpc-rust"
+
+[dependencies]
+rustc-serialize = "0.3"
+gj = "0.1"
+capnp = "0.6"
+capnp-rpc = "0.6"
+etcd =  "0.2"
+
+#[dependencies.capnp]
+#git = "https://github.com/dwrensha/capnproto-rust.git"
+#rev = "c99a2be38854eacb2e00a3622bdba7d388fe36e3"
